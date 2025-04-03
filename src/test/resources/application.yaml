@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:9.6.8:///hometask-db
+    flyway.baselineOnMigrate: true
+  jpa.hibernate.ddl-auto: create
+
+external:
+  json-placeholder:
+    baseUrl: https://example.com
+    postsUri: posts
+    usersUri: users
+    expiration: 10

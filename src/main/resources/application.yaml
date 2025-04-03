@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/hometask-db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+    max-active: 10
+  flyway.baselineOnMigrate: true
+  jpa.hibernate.ddl-auto: create
+
+external:
+  json-placeholder:
+    baseUrl: https://jsonplaceholder.typicode.com
+    postsUri: posts
+    usersUri: users
+    expiration: 10
